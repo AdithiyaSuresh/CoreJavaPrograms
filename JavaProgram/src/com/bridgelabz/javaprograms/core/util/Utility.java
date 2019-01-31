@@ -949,5 +949,20 @@ public class Utility {
 		public static Long getLong() {
 			return scanner.nextLong();
 		}
+		//String validation
+		public static boolean validateStringForAlphanumericOflength20(String str)
+		{
+			if(str==null)
+				return false;
+			if(str.trim().equals(""))
+				return false;
+			if(str.trim().contains(" "))
+				return false;
+			if(!Character.isLetter(str.charAt(0)))
+				return false;
+			if(str.length()>20 || str.length()<3)
+				return false;
+			return true;
+		}
 }
 
