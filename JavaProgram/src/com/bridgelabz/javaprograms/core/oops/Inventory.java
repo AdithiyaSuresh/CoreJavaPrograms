@@ -1,35 +1,30 @@
 package com.bridgelabz.javaprograms.core.oops;
 
+import java.util.List;
+
 /******************************************************************************
- *  Purpose :  Product class to create various products in an inventory
+ *  Purpose :  Inventory class to create various inventories
  *  
  *  @author  BridgeLabz/Sudhakar
  *  @version 1.0
  *  @since   31-01-2019
  *  
  *******************************************************************************/
-public class Product {
+public class Inventory {
 	private String name;
-	private double quantity;
-	private double price;
+	private List<Product> products;
 
+	//setters and getters
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public double getQuantity() {
-		return quantity;
+	public List<Product> getProducts() {
+		return products;
 	}
-	public void setQuantity(double d) {
-		this.quantity = d;
+	public void setProducts(List<Product> products) {
+		this.products = products;
 	}
-	public double getPrice() {
-		return price;
-	}
-	public void setPrice(double inputPropertyprice) {
-		this.price = inputPropertyprice;
-	}
-
 }

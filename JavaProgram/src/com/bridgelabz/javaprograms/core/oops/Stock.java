@@ -4,7 +4,14 @@ public class Stock {
 	private String name;
 	private int numberOfShares;
 	private  double price;
+	private String symbol;
 	
+	public String getSymbol() {
+		return symbol;
+	}
+	public void setSymbol(String symbol) {
+		this.symbol = symbol;
+	}
 	public String getName() {
 		return name;
 	}
