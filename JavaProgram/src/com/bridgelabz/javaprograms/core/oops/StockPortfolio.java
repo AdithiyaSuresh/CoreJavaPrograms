@@ -25,7 +25,7 @@ public class StockPortfolio {
 	public double getTotalStockValue() {
 		long totalStockValue = 0L;
 		for (int i = 0; i < stocks.size(); i++) {
-			totalStockValue += stocks.get(i).getTotalStockValue();
+			totalStockValue += stocks.get(i).getPrice() * stocks.get(i).getNumberOfShares();
 		}
 		return totalStockValue;
 	}
@@ -78,7 +78,7 @@ public class StockPortfolio {
 		System.out.println("=================================================================================");
 		count = 1;
 		for(Stock s : portfolio.getStocks()) {
-        	System.out.println(count+"\t "+s.getName()+"\t\t\t"+s.getNumberOfShares()+"   \t"+s.getPrice()+"  \t\t"+s.getTotalStockValue());
+        	System.out.println(count+"\t "+s.getName()+"\t\t\t"+s.getNumberOfShares()+"   \t"+s.getPrice()+"  \t\t"+s.getPrice()*s.getNumberOfShares());
         }
 		System.out.println("\n Total Stock Value = "+portfolio.getTotalStockValue());
 	}

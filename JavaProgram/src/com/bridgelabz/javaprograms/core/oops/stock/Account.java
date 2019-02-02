@@ -4,9 +4,9 @@ public interface Account {
 	
 	double valueOf();
 
-	void buy(int amount, String symbol);
+	void buy(double amount, String name);
 
-	void sell(int amount, String symbol);
+	void sell(double amount, String name);
 
 	void save(String filename);
 

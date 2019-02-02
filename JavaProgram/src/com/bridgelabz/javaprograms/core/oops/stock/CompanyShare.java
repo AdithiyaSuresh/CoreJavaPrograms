@@ -3,11 +3,9 @@ package com.bridgelabz.javaprograms.core.oops.stock;
 import java.util.Date;
 
 public class CompanyShare {
-    private String name;
-    private String symbol;
-    private int numOfShares;
+	private String name;
+	private int numberOfShares;
     private Date transactionDate;
-    
     
 	public String getName() {
 		return name;
@@ -15,17 +13,11 @@ public class CompanyShare {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getSymbol() {
-		return symbol;
+	public int getNumberOfShares() {
+		return numberOfShares;
 	}
-	public void setSymbol(String symbol) {
-		this.symbol = symbol;
-	}
-	public int getNumOfShares() {
-		return numOfShares;
-	}
-	public void setNumOfShares(int numOfShares) {
-		this.numOfShares = numOfShares;
+	public void setNumberOfShares(int numberOfShares) {
+		this.numberOfShares = numberOfShares;
 	}
 	public Date getTransactionDate() {
 		return transactionDate;
@@ -33,6 +25,4 @@ public class CompanyShare {
 	public void setTransactionDate(Date transactionDate) {
 		this.transactionDate = transactionDate;
 	}
-    
-    
 }

@@ -34,7 +34,7 @@ public class Stock {
 	 * gives the total stock value of a firm
 	 * @return total stock value
 	 */
-	public double getTotalStockValue() {
-		return getNumberOfShares() * getPrice();
-	}
+//	public double getTotalStockValue() {
+//		return getNumberOfShares() * getPrice();
+//	}
 }
